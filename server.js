@@ -6,11 +6,17 @@ const app = express();
 connectDB();
 
 const port = process.env.PORT || 5000;
-// const www = process.env.WWW || './';
-// app.use(express.static(www));
-// console.log(`serving ${www}`);
 
 app.get('/', (req, res) => {
     res.send(`API Running`);
 });
+
+// Define Routes
+
+app.use('/api/users', require('./routes/api/users'));
+app.use('/api/auth', require('./routes/api/auth'));
+app.use('/api/profile', require('./routes/api/profile'));
+app.use('/api/posts', require('./routes/api/posts'));
+
+
 app.listen(port, () => console.log(`Server started on port ${port}`));
