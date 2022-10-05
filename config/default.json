@@ -1,3 +1,4 @@
 {
-"mongoURL":"mongodb+srv://hitesh:India%40123@devconnectortutorial.sdg5kbe.mongodb.net/?retryWrites=true&w=majority"
+"mongoURL":"mongodb+srv://hitesh:India%40123@devconnectortutorial.sdg5kbe.mongodb.net/?retryWrites=true&w=majority",
+"jwtSecret":"mysecrettoken"
 }
